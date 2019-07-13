@@ -6,7 +6,7 @@ This is a git search application that is supposed to allow a user to search for 
 
 #### Author
 
- ****Omonge Calvince****&trade; (10/06/2019)
+ <!-- ****Omonge Calvince****&trade; (10/06/2019) -->
 
 ## Description
 
@@ -22,7 +22,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Project live site
 
-  This is the live .[ Click for the demo](https://calvince.github.io/Git-Search/)
+  <!-- This is the live .[ Click for the demo](https://calvince.github.io/Git-Search/) -->
 
   
 
@@ -71,8 +71,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Support and contact details
-contact me @ calmosh1421@gmail.com
+Email: vinceoumah@gmail.com
 ### License
-The project is under [MIT license](https://github.com/calvince/Git-Search/blob/master/LICENSE)
+The project is under [MIT license](https://github.com/vincentouma/GitHub-Search/blob/master/LICENSE)
 Copyright &copy; 2019.All rigths reserved
   
