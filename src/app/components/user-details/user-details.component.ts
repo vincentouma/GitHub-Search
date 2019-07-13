@@ -43,7 +43,7 @@ export class UserDetailsComponent implements OnInit {
     this.repo = this.service.repo;
     //typed js added to the page
     const options = {
-      strings: ['Enter your username please.'],
+      strings: ['Enter GitHub username .'],
       typeSpeed: 100,
       backSpeed: 100,
       loop: true

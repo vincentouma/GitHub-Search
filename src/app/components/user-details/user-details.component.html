@@ -1,19 +1,23 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
+
+  <h1>GitHub Search</h1>
+
+  <form>
+      <div class="form-group">
+          <input type="text" class="form-control" [(ngModel)]="username" name="username" placeholder="Enter Username" (keyup)="getProfile()">
+        </div>
+    </form>
+
+    
 <div class="search-class">
-  <p id='users' class="btn btn-warning" (click)="searchUsers = true">Users</p>
-  <p id='repos' class="btn btn-info" (click)="searchUsers = false">Repos</p>
+  <button id='users' class="btn btn-warning" (click)="searchUsers = true">Users</button>
+  <button id='repos' class="btn btn-info" (click)="searchUsers = false">Repos</button>
 </div>
-<p class="moringa"></p>
-<form>
-  <div class="form-group">
-      <input type="text" class="form-control" [(ngModel)]="username" name="username" placeholder="Enter Username" (keyup)="getProfile()">
-    </div>
-</form>
+<p class="moring"></p>
 
 
-<div *ngIf="searchUsers" class="d-flex justify-content-sm-between clearfix main-card">
+
+<div *ngIf="searchUsers" class="d-flex justify-content-sm-between clearfix main-car">
   <div class="avi-panel to-left">
     <img src="{{user.avatar_url}}" alt="avatar">
     <a href="{{user.html_url}}" target="_blank"><button class=" prof-btn">Go to Profile </button></a>
@@ -40,7 +44,7 @@
     
   </div>
 </div>
-</div>
-</div>
+
+
 </div>
 
