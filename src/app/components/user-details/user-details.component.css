@@ -8,7 +8,8 @@ h1{
 span{
     /* border: 3px solid black; */
     box-sizing: border-box;
-    border:radius 50%; 
+    border:radius 80%; 
+    color: aqua;
 }
 img{
     box-sizing: border-box;
