@@ -12,17 +12,19 @@
 <div class="search-class">
   <button id='users' class="btn btn-warning" (click)="searchUsers = true">Users</button>
   <button id='repos' class="btn btn-info" (click)="searchUsers = false">Repos</button>
+
 </div>
 <p class="moring"></p>
 
 
 
-<div *ngIf="searchUsers" class="d-flex justify-content-sm-between clearfix main-car">
-  <div class="avi-panel to-left">
+<div *ngIf="searchUsers" class="top">
+  <div class="profile">
     <img src="{{user.avatar_url}}" alt="avatar">
-    <a href="{{user.html_url}}" target="_blank"><button class=" prof-btn">Go to Profile </button></a>
+    <a href="{{user.html_url}}" target="_blank"><button class=" prof-btn">Checkout Profile </button></a>
+
   </div>
-  <div class="details to-right">
+  <div class="details">
       <h3>{{user.name}}</h3>
       <p class="btn btn-danger">Followers<br><span>{{user.followers}}</span></p>
       <p class="btn btn-warning">Following<br><span>{{user.following}}</span></p>
