@@ -48,7 +48,7 @@ export class UserDetailsComponent implements OnInit {
       backSpeed: 100,
       loop: true
  };
- const omonge = new Typed('.moringa', options);
+ const vincent = new Typed('.moringa', options);
   }
 
 }

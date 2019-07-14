@@ -7,36 +7,39 @@
           <input type="text" class="form-control" [(ngModel)]="username" name="username" placeholder="Enter Username" (keyup)="getProfile()">
         </div>
     </form>
-
-    
+<div class="row">
+   <div class="col-md-6"> 
 <div class="search-class">
-  <button id='users' class="btn btn-warning" (click)="searchUsers = true">Users</button>
+  <button id='users' class="btn btn-warning" (clic)="searchUsers = true">Users</button>
   <button id='repos' class="btn btn-info" (click)="searchUsers = false" class="repo">Repos</button>
 
 </div>
-<!-- <p class="moring"></p> -->
+<p class="moring"></p>
+
+</div>
 
 
-
-
-<div class="row">
+<div class="col-md-6">
 <div *ngIf="searchUsers" class="top">
   <div class="profile">
-    <img src="{{user.avatar_url}}" alt="avatar">
-    <a href="{{user.html_url}}" target="_blank"><button class=" prof-btn">Checkout Profile </button></a>
+    <img src="{{user.avatar_url}}" alt="avatar" hight="300px" width="250px">
+    <br>
+    <br>
 
   </div>
  
   
 </div>
-<div class="details">
+<div class="details row">
     <h3>{{user.name}}</h3>
-    <p class="btn btn-danger">Followers<br><span>{{user.followers}}</span></p>
-    <p class="btn btn-warning">Following<br><span>{{user.following}}</span></p>
-    <p class="btn btn-info">Repositories<br><span>{{user.public_repos}}</span></p>
+    <p class="">Followers <span>{{user.followers}}</span></p>
+    <p class="">Following <span>{{user.following}}</span></p>
+    <p class="">Repositories<span>{{user.public_repos}}</span></p>
 </div>
-</div>
+<a href="{{user.html_url}}" target="_blank"><button class=" btn btn-success">Checkout Profile </button></a>
 
+</div>
+</div>
 
 <div *ngIf="!searchUsers">
   <div class="container repo-row">
